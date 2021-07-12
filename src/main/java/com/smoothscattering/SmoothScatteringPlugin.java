@@ -46,6 +46,7 @@ public class SmoothScatteringPlugin extends Plugin
 {
 	private static int ASH_SCATTER_ANIMATION_ID = 2295;
 	private static int SMOOTH_DANCE_ANIMATION_ID = 7533;
+	private static int DUST_GRAPHIC_ID = 567;
 
 	@Inject
 	private Client client;
@@ -88,6 +89,11 @@ public class SmoothScatteringPlugin extends Plugin
 		{
 			target.setAnimation(SMOOTH_DANCE_ANIMATION_ID);
 			target.setAnimationFrame(0);
+			if (config.addDustEffect())
+			{
+				target.setGraphic(DUST_GRAPHIC_ID);
+				target.setAnimationFrame(0);
+			}
 		}
 	}
 }

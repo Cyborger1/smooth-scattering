@@ -42,4 +42,15 @@ public interface SmoothScatteringConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+		position = 2,
+		keyName = "addDustEffect",
+		name = "Add Dust Effect",
+		description = "Add a dust effect when scattering ashes."
+	)
+	default boolean addDustEffect()
+	{
+		return false;
+	}
 }
