@@ -34,22 +34,22 @@ public interface SmoothScatteringConfig extends Config
 {
 	@ConfigItem(
 		position = 1,
-		keyName = "affectOtherPlayers",
-		name = "Affect Other Players",
-		description = "Apply the animation change to other players as well when they scatter ashes."
+		keyName = "addDustEffect",
+		name = "Add Dust Effect",
+		description = "Add a dust effect when scattering ashes."
 	)
-	default boolean affectOtherPlayers()
+	default boolean addDustEffect()
 	{
 		return false;
 	}
 
 	@ConfigItem(
 		position = 2,
-		keyName = "addDustEffect",
-		name = "Add Dust Effect",
-		description = "Add a dust effect when scattering ashes."
+		keyName = "affectOtherPlayers",
+		name = "Affect Other Players",
+		description = "Apply the animation change to other players as well when they scatter ashes."
 	)
-	default boolean addDustEffect()
+	default boolean affectOtherPlayers()
 	{
 		return false;
 	}
