@@ -44,9 +44,9 @@ import net.runelite.client.plugins.PluginDescriptor;
 )
 public class SmoothScatteringPlugin extends Plugin
 {
-	private static int ASH_SCATTER_ANIMATION_ID = 2295;
-	private static int SMOOTH_DANCE_ANIMATION_ID = 7533;
-	private static int DUST_GRAPHIC_ID = 1103;
+	private static final int ASH_SCATTER_ANIMATION_ID = 2295;
+	private static final int SMOOTH_DANCE_ANIMATION_ID = 7533;
+	private static final int DUST_GRAPHIC_ID = 1103;
 
 	@Inject
 	private Client client;
